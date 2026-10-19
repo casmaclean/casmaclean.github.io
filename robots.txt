@@ -1,0 +1,49 @@
+# robots.txt: rules for automated crawlers.
+#
+# AI *training* crawlers are asked not to collect this site.
+# Search engines and AI search/assistant bots (which fetch pages to answer
+# a person's question and link back) are still allowed, so the site stays findable.
+# These rules are a request that reputable crawlers honour; they are not a lock.
+
+# OpenAI (model training)
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic (model training)
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Google (Gemini training; does not affect Google Search)
+User-agent: Google-Extended
+Disallow: /
+
+# Apple (Apple Intelligence training; does not affect Siri/Spotlight search)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta (model training)
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Common Crawl (open dataset widely used for AI training)
+User-agent: CCBot
+Disallow: /
+
+# ByteDance (model training)
+User-agent: Bytespider
+Disallow: /
+
+# Cohere (model training)
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# Allen Institute for AI (model training)
+User-agent: AI2Bot
+Disallow: /
+
+# Everyone else (Google, Bing, AI search and assistant bots, etc.)
+User-agent: *
+Allow: /
